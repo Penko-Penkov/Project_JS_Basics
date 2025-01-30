@@ -12,15 +12,15 @@ body {
 h1 {
     color: #333;
 }
-
 .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-    max-width: 400px;
-    text-align: center;
+    max-width: 600px;
+    max-height: 90vh; /* Ограничаване на максималната височина */
+    overflow-y: auto; /* Добавено за да се избегне проблем с височината */
 }
 
 label {
