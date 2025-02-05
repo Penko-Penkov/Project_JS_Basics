@@ -16,12 +16,10 @@ async function getWeather() {
             displayForecast(weatherData.daily);
         } else {
             document.getElementById('weather-result').innerText = 'City not found. Please try again.';
-            clearResults();
         }
     } catch (error) {
         console.error('Error fetching weather data:', error);
         document.getElementById('weather-result').innerText = 'Error fetching weather data. Please try again later.';
-        clearResults();
     }
 }
 
@@ -46,8 +44,4 @@ function displayForecast(forecast) {
             <hr>
         `;
     }
-}
-
-function clearResults() {
-    document.getElementById('forecast-result').innerHTML = '';
 }
